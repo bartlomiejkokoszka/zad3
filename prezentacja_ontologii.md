@@ -90,3 +90,14 @@ Nazwa kwalifikowana: dbr:Poland
 Do zdefiniowania danej nazwy używam @prefix: @prefix dbr:http://dbpedia.org/resource/
 Sposobem zapisu definicji jest notacja BNF (Backus--Naur form).
 Definicje składają się ze słów, które definiujemy, aż dojdziemy do znaków, których można użyć. -->
+
+
+
+## Literał
+
+\begin{center}
+
+Literał jest wartością, która nie jest zasobem: tekstem, liczbą, datą- 
+ OPIS A NIE OBIEKT W ŚWIECIE.
+
+\end{center}
