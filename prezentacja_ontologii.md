@@ -22,7 +22,11 @@ header-includes:
 
 Składając te trójki razem uzyskujemy coraz bardziej złożone grafy.
 
-<!---  Zajęcia zaczęliśmy od powtórzenia czym jest URI, IRI. URI- Uniform Resource Identifier- służy do identyfikacji zasobów w sieci. IRI- Internationalized Resource Identifier- również identyfikuje zasoby, ale uwzględnia jeszcze inne znaki niż te w alfabecie łacińskim. Podstawą Open linked data są trójelementowe grafy składające się z: ●Podmiot - subject; ●Orzeczenie - predicate; ●Dopełnienie lub obiekt - object. Składając te trójki razem uzyskujemy coraz bardziej złożone grafy  -->
+<!---  Zajęcia zaczęliśmy od powtórzenia czym jest URI, IRI. URI- Uniform Resource Identifier- służy do identyfikacji zasobów w sieci. IRI- Internationalized Resource Identifier- również identyfikuje zasoby, ale uwzględnia jeszcze inne znaki niż te w alfabecie łacińskim. Podstawą Open linked data są trójelementowe grafy składające się z: 
+●Podmiot - subject; 
+●Orzeczenie - predicate; 
+●Dopełnienie lub obiekt - object. 
+Składając te trójki razem uzyskujemy coraz bardziej złożone grafy  -->
 
 
 ## Sieć semantyczna
@@ -39,9 +43,11 @@ Języki RDF powstały do opisu sieci semantycznej.
 
 <!--- RDF- Resource Description Framework- jest środowiskiem(wzorcem języków) dla wyrażania informacji o zasobach, opracowana przez W3C. Zasobem może być wszystko np. dokumenty, ludzie, przedmioty fizyczne, pojęcia abstrakcyjne. RDF jest przeznaczony dla aplikacji, które przetwarzają informacje w Internecie. RDF jest wspólnym środowiskiem pomiędzy komputerami, w którym można wymieniać informacje w taki sposób, że jej wymiana nie prowadzi do utraty sensu.  -->
 
+
+
 ## Przykład grafu RDF
 
-
+![](pics/obrazek4.png){}
 
 Z naszego przykładu:
 
@@ -51,3 +57,36 @@ Z naszego przykładu:
 
 3. Object: **http://dbpedia.org/resource/Polish_language**
 
+<!--- URI odnoszą się do konkretnej rzeczy, przedmiotu, relacji w świecie.
+Trójki stwierdzają pewne fakty w świecie, łączą za pomocą relacji podmioty z danymi lub innymi podmiotami.  -->
+
+
+
+## Zasób i własności
+
+Zasobem nazywamy wszystko poza danymi.
+
+
+
+Własności (relacje) łączą zasoby z zasobami lub zasoby z danymi.
+
+
+
+## Nazwa kwalifikowana
+
+Nazwa niekwalifikowana: http://dbpedia.org/resource/Poland
+
+Nazwa kwalifikowana: dbr:Poland
+
+Do zdefiniowania danej nazwy używam *@prefix:* 
+**@prefix dbr:http://dbpedia.org/resource/**
+
+Sposobem zapisu definicji jest notacja BNF (Backus–Naur form).
+
+
+
+<!---  Nazwa niekwalifikowana: http://dbpedia.org/resource/Poland
+Nazwa kwalifikowana: dbr:Poland
+Do zdefiniowania danej nazwy używam @prefix: @prefix dbr:http://dbpedia.org/resource/
+Sposobem zapisu definicji jest notacja BNF (Backus--Naur form).
+Definicje składają się ze słów, które definiujemy, aż dojdziemy do znaków, których można użyć. -->
