@@ -129,3 +129,93 @@ formy leksykalnej zapisanej w cudzysłowiu
 IRI dla typu danych
 jeżeli dany literał jest w jakimś języku możemy znacznik określający język, z którego się wywodzi. Znacznik ten zaczyna się od znaku @ a po nim dwie litery oznaczające dany język. en-angielski, pl-polski itp.
 Typ danych możemy zapisać również po ^^ po danym literale. -->
+
+
+
+## Serializacja grafów RDF
+
+
+
+Serializacja jest to zapisanie grafów w pliku tekstowym w sposób zrozumiały dla komputera.
+
+Typy serializacji:
+
+* XML
+
+* JSON
+
+* Turtle
+
+* N-Triples
+
+
+
+## Słownik RDF
+
+* Języki na podstawie RDF:
+  * rdf: https://www.w3.org/1999/02/22-rdf-syntax-ns
+  * rdfs: https://www.w3.org/2000/01/rdf-schema
+
+
+
+## Klasy
+
+rdfs:Class - zasób, zbiór wszystkich zbiorów.
+
+rdf:type - relacja mówiąca nam, że jeden zasób jest typu innego zasobu.
+
+\begin{center}
+
+**IRI#1 rdf:type rdfs:Class**
+
+\end{center}
+
+rdfs:subClassOf- zasób jest podklasą innego zasobu.
+
+\begin{center}
+
+ **IRI#1 rdfs:subClassOf IRI#2**
+
+\end{center}
+
+<!--- rdfs:Class - zasób, zbiór wszystkich zbiorów.
+rdf:type - relacja mówiąca nam, że jeden zasób jest typu innego zasobu.
+IRI#1 rdf:type rdfs:Class
+IRI#1 jest zbiorem typu rdfs:Class. 
+np. 
+dbo:Place rdf:type rdfs:Classdbo:Garbacz rdf:type dbo:Place
+rdf:type możemy przyrównać do symbolu przynależności ϵ z matematyki. Gdy nie mam wprowadzonego zasobu rdfs:Class nie mogę mówić o zbiorach, bo dopiero ten zasób definiuje mi to pojęcie.
+rdfs:subClassOf- zasób jest podklasą innego zasobu.
+ IRI#1 rdfs:subClassOf IRI#2
+Wraz z rdfs:subClassOf uzyskujemy możliwość wnioskowania o zawieraniu się zbiorów, dokładniej przechodniości.
+Jeżeli
+IRI#1 rdfs:subClassOf IRI#2
+IRI#2 rdfs:subClassOf IRI#3
+To
+IRI#1 rdfs:subClassOf IRI#3 
+--->
+
+## Relacje
+
+Podobnie jak z klasami jest też z relacjami:
+
+* rdf:Property - tak definiujemy relację;
+
+* rdfs:subPropertyOf- a tak podrelację danej relacji.
+
+Do relacji odnoszą się dziedziny i przeciwdziedziny(zakresy):
+
+![](pics/obrazek5.png){}
+
+* rdfs:domain- dziedzina
+
+* rdfs:range- zakres
+
+<!--- Podobnie jak z klasami jest też z relacjami:
+rdf:Property - tak definiujemy relację;
+rdfs:subPropertyOf- a tak podrelację danej relacji.
+Do relacji odnoszą się dziedziny i przeciwdziedziny(zakresy):
+rdfs:domain- dziedzina
+rdfs:range- zakres
+Dziedzina i zakres to zbiory elementów. Dziedzinom relacja przypisuje elementy z zakresu.
+--->
