@@ -101,3 +101,31 @@ Literał jest wartością, która nie jest zasobem: tekstem, liczbą, datą-
  OPIS A NIE OBIEKT W ŚWIECIE.
 
 \end{center}
+
+Każdy literał należy do innego typu danych(data type):
+
+* liczba całkowita(https://www.w3.org/TR/xmlschema11-2/#integer);
+
+* tekst(https://www.w3.org/TR/xmlschema11-2/#string);
+
+* data(https://www.w3.org/TR/xmlschema11-2/#date);
+
+* itd.
+
+Literał składa się z dwóch lub trzech części.
+
+
+
+Typ danych możemy zapisać również po \textcolor{yellow}{^^} po danym literale.
+
+<!--- Literał jest wartością, która nie jest zasobem: tekstem, liczbą, datą- OPIS A NIE OBIEKT W ŚWIECIE.
+Każdy literał należy do innego typu danych(data type):
+liczba całkowita(https://www.w3.org/TR/xmlschema11-2/#integer);
+tekst(https://www.w3.org/TR/xmlschema11-2/#string);
+data(https://www.w3.org/TR/xmlschema11-2/#date);
+itd.
+Literał składa się z dwóch lub trzech części.
+formy leksykalnej zapisanej w cudzysłowiu
+IRI dla typu danych
+jeżeli dany literał jest w jakimś języku możemy znacznik określający język, z którego się wywodzi. Znacznik ten zaczyna się od znaku @ a po nim dwie litery oznaczające dany język. en-angielski, pl-polski itp.
+Typ danych możemy zapisać również po ^^ po danym literale. -->
